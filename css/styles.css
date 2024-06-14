@@ -510,23 +510,98 @@ img {
 
 .modal {
   position: absolute;
-  width: 517px;
-  min-height: 794px;
-  background-color: #fafafa;
-  border-radius: 15px;
+  width: 408px;
+  min-height: 584px;
+  background-color: rgba(46, 47, 66, 0.4);
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 40px;
+  background: #fcfcfc;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
 }
-.modal-buttom {
+.modal-button {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e7e9fc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
+  cursor: pointer;
+  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
+.modal-button:hover,:focus {
+   background-color: #404bbf;
+    border: none;
+}
+
+.button-svg {
+   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-title {
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em; 
+  text-align: center;
+  color:#2E2F42;
+  margin-bottom: 16px;
+
+}
+
+
 .modal-form {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.modal-field {
+  margin-bottom: 8px;
+}
+
 .footer-label {
+  font-size: 12px;
+  line-height: 117px;
+  letter-spacing: 0.04em;
+  color: #8e8f99; 
+  display: block; 
+  margin-bottom:  4px;
 }
+.modal-field-wrap {
+  position: relative;
+}
+
 .footer-input {
+  width: 100%;
+  border: 1px solid rgba(46, 47, 66, 0.4); 
+  height: 40px;
+  border-radius:4px;
+  background-color: transparent;
+  padding-left: 38px;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
+.footer-input:focus{
+ border-color: #4D5AE5;
+}
+
+.modal-svg {
+   position: absolute;
+   left: 16px;
+   top5:50%;
+   transform: translateY(-50%); 
+   transition:fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+

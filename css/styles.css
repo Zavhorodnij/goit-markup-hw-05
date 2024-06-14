@@ -493,3 +493,40 @@ img {
 .footer-links:focus {
   background-color: #31d0aa;
 }
+
+/* ---------------- backdrop-------------------- */
+.backdrop {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
+    0 2px 1px 0 rgba(0, 0, 0, 0.2);
+  background: var(--dairy);
+  position: fixed;
+  top: 0;
+  /* opacity: 0;
+  /* visibility: hidden; */
+  /* pointer-events: none; */
+}
+
+.modal {
+  position: absolute;
+  width: 517px;
+  min-height: 794px;
+  background-color: #fafafa;
+  border-radius: 15px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+}
+.modal-buttom {
+}
+.modal-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-label {
+}
+.footer-input {
+}

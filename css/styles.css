@@ -495,56 +495,85 @@ img {
 }
 
 /* ------------ Subscribe-------------*/
-.form-for-footer{
+.form-for-footer {
   display: flex;
-   gap 24px;
+  gap: 24px;
 }
-
 
 .title-input-email {
   font-weight: 500;
   line-height: 1.5;
-  letter-spacing: 0.02em; 
+  letter-spacing: 0.02em;
   text-align: center;
-  color: #ffffff;;
+  color: #ffffff;
   margin-bottom: 16px;
-  width: 264px; 
+}
+.input-footer {
+  width: 264px;
+  height: 40px;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  padding-left: 16px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: #ffffff;
 }
 
-
-
+.btn-footer {
+  display: flex;
+  min-width: 165px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #4d5ae5;
+  border: none;
+  border-radius: 4px;
+}
 
 /* ---------------- backdrop-------------------- */
-/* .backdrop {
+.backdrop {
   width: 100%;
   height: 100%;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
-  background: var(--dairy);
+  background-color: rgba(46, 47, 66, 0.4);
   position: fixed;
   top: 0;
-  /* opacity: 0;
-  /* visibility: hidden; */
-  /* pointer-events: none; */
+  left: 0;
+  /* opacity: 1;
+  visibility: hidden;
+  pointer-events: none; */
+}
 
-
-/* .modal {
+.modal {
   position: absolute;
   width: 408px;
   min-height: 584px;
-  background-color: rgba(46, 47, 66, 0.4);
   top: 50%;
   left: 50%;
+  transform: translate(-50%, -50%);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 40px;
-  background: #fcfcfc;
+  background-color: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-}  */
-.modal-button {
+  padding: 72px 24px 24px;
+}
+
+.modal-btn {
   position: absolute;
   top: 24px;
   right: 24px;
@@ -558,33 +587,39 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0;
   cursor: pointer;
-  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+  background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-button:hover,:focus {
-   background-color: #404bbf;
-    border: none;
+
+.modal-btn:focus {
+  background-color: #404bbf;
+  border: none;
+  fill: #ffffff;
+}
+.modal-btn:hover {
+  background-color: #404bbf;
+  border: none;
+  fill: #ffffff;
 }
 
 .button-svg {
-   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-title {
   font-weight: 500;
   line-height: 1.5;
-  letter-spacing: 0.02em; 
+  letter-spacing: 0.02em;
   text-align: center;
-  color:#2E2F42;
+  color: #2e2f42;
   margin-bottom: 16px;
-
 }
-
 
 .modal-form {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
 }
 .modal-field {
   margin-bottom: 8px;
@@ -594,9 +629,9 @@ img {
   font-size: 12px;
   line-height: 117px;
   letter-spacing: 0.04em;
-  color: #8e8f99; 
-  display: block; 
-  margin-bottom:  4px;
+  color: #8e8f99;
+  display: block;
+  margin-bottom: 4px;
 }
 .modal-field-wrap {
   position: relative;
@@ -604,24 +639,22 @@ img {
 
 .footer-input {
   width: 100%;
-  border: 1px solid rgba(46, 47, 66, 0.4); 
+  border: 1px solid rgba(46, 47, 66, 0.4);
   height: 40px;
-  border-radius:4px;
+  border-radius: 4px;
   background-color: transparent;
   padding-left: 38px;
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
-.footer-input:focus{
- border-color: #4D5AE5;
+.footer-input:focus {
+  border-color: #4d5ae5;
 }
 
 .modal-svg {
-   position: absolute;
-   left: 16px;
-   top5:50%;
-   transform: translateY(-50%); 
-   transition:fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-

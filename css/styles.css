@@ -708,8 +708,6 @@ img {
   letter-spacing: 0.04em;
   color: #8e8f99;
 }
-.checkbox-svg {
-}
 
 .privacy-policy {
   color: #4d5ae5;
@@ -733,8 +731,8 @@ img {
 }
 
 .btn-subscribe {
-  display: block;
-  min-width: 169px;
+  width: 169px;
+  margin: 0 auto;
   height: 56px;
   font-family: "Roboto", sans-serif;
   font-size: 16px;

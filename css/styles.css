@@ -500,6 +500,27 @@ img {
   gap: 24px;
 }
 
+.btn-footer {
+  display: flex;
+  min-width: 165px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #4d5ae5;
+  border: none;
+  border-radius: 4px;
+}
+.svg-btn-ftr {
+  margin-left: 16px;
+}
+
 .title-input-email {
   font-weight: 500;
   line-height: 1.5;
@@ -522,24 +543,6 @@ img {
   color: #ffffff;
 }
 
-.btn-footer {
-  display: flex;
-  min-width: 165px;
-  height: 40px;
-  align-items: center;
-  justify-content: center;
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  color: #ffffff;
-  cursor: pointer;
-  background-color: #4d5ae5;
-  border: none;
-  border-radius: 4px;
-}
-
 /* ---------------- backdrop-------------------- */
 .backdrop {
   width: 100%;
@@ -552,9 +555,9 @@ img {
   position: fixed;
   top: 0;
   left: 0;
-  /* opacity: 1;
+  opacity: 1;
   visibility: hidden;
-  pointer-events: none; */
+  pointer-events: none;
 }
 
 .modal {
@@ -627,7 +630,7 @@ img {
   margin-bottom: 8px;
 }
 
-.footer-label {
+.modal-label {
   display: block;
   font-size: 12px;
   line-height: 117px;
@@ -641,7 +644,7 @@ img {
   position: relative;
 }
 
-.footer-input {
+.modal-input {
   width: 100%;
   border: 1px solid rgba(46, 47, 66, 0.4);
   height: 40px;
@@ -652,7 +655,7 @@ img {
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-input:focus {
+.modal-input:focus {
   border-color: #4d5ae5;
 }
 
@@ -664,7 +667,7 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-textarea {
+.modal-textarea {
   width: 100%;
   height: 120px;
   font-size: 12px;
@@ -680,9 +683,10 @@ img {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-textarea :focus {
+.modal-textarea :focus {
   border-color: #4d5ae5;
 }
+/* ------------------------------------ */
 .checkbox {
   margin-bottom: 24px;
 }
@@ -693,7 +697,7 @@ img {
   color: #8e8f99;
 }
 
-.footer-span {
+.modal-span {
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -724,8 +728,4 @@ img {
   background-color: #4d5ae5;
   border: none;
   border-radius: 4px;
-}
-
-.svg-btn-ftr {
-  /* margin-left: 16px; */
 }

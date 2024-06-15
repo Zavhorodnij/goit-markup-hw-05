@@ -731,7 +731,7 @@ img {
 }
 
 .btn-subscribe {
-  width: 169px;
+  min-width: 169px;
   margin: 0 auto;
   height: 56px;
   font-family: "Roboto", sans-serif;

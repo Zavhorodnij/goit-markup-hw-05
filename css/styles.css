@@ -547,6 +547,8 @@ img {
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
   background-color: rgba(46, 47, 66, 0.4);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   position: fixed;
   top: 0;
   left: 0;
@@ -562,15 +564,13 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 40px;
   background-color: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  padding: 72px 24px 24px;
+  /* padding: 72px 24px 24px; */
 }
 
 .modal-btn {
@@ -588,6 +588,8 @@ img {
   padding: 0;
   cursor: pointer;
   background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -630,8 +632,8 @@ img {
   line-height: 117px;
   letter-spacing: 0.04em;
   color: #8e8f99;
-  display: block;
   margin-bottom: 4px;
+  line-height: 1.17;
 }
 .modal-field-wrap {
   position: relative;
@@ -644,6 +646,7 @@ img {
   border-radius: 4px;
   background-color: transparent;
   padding-left: 38px;
+  margin-bottom: 8;
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
